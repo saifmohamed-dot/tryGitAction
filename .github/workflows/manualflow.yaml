@@ -1,10 +1,18 @@
 name: manual workflow .
 on:
   workflow_dispatch:
-
+    inputs:
+      environment:
+        description: what environment do you want to trigger this workflow on ? 
+        required: true
+        options:
+          - Testing
+          - Production
+          - Staging 
+      
 jobs:
   simulate-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: simulate deploy
-        run: echo "deploy running ...."
+        run: echo "deploy running on ${{inputs.environment}}"
