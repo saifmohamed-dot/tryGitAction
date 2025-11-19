@@ -4,7 +4,7 @@ on:
 
 jobs:
   simulate-deploy:
-  runs-on: ubuntu-latest
-  steps:
-    - name: simulate deploy
-      run: echo "deploy running ...."
+    runs-on: ubuntu-latest
+    steps:
+      - name: simulate deploy
+        run: echo "deploy running ...."
