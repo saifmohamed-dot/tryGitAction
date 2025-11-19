@@ -1,0 +1,14 @@
+name: our first Github Action
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  first-job:
+    name: first job for Github Action Push 
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: first step on job first-job
+        run: echo "saif from from first step first-job" 
