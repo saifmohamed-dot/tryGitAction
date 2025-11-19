@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: first step on job first-job
-        run: echo "saif from from first step first-job" 
-      - name: second step on job first-job
-        run: echo "from the second step" 
+      - name: list directory before installing checkout 
+        run: ls -la  
+      - name: Repository Checkout 
+        uses: actions/checkout@v4,3.1
+      - name: list directory after installing checkout 
+        run: ls -la 
