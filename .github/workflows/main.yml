@@ -2,7 +2,7 @@ name: our first Github Action
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   first-job:
