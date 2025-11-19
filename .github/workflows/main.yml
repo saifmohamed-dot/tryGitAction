@@ -17,4 +17,4 @@ jobs:
       - name: list directory after installing checkout 
         run: ls -la 
       - name: cat the Read.me file 
-        run: cat README.me
+        run: cat README.md
