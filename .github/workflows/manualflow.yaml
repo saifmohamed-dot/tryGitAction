@@ -5,6 +5,7 @@ on:
       environment:
         description: what environment do you want to trigger this workflow on ? 
         required: true
+        default: Staging
         options:
           - Testing
           - Production
