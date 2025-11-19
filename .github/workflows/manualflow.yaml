@@ -1,6 +1,6 @@
 name: manual workflow .
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
   jobs:
     simulate-deploy:
