@@ -1,0 +1,10 @@
+name: manual workflow .
+on:
+  workflow-dispatch:
+
+  jobs:
+    simulate-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simulate deploy
+        run: echo "deploy running ...."
